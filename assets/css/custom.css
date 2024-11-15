@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-Book.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-BookItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('../fonts/Univia/UniviaPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-select {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #f25b00;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #f25b00;
+  position: relative;
+  font-family: 'UniviaPro'
+}
+
+.language-select img.globe-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.language-select select {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0);
+  font-size: inherit;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.language-select select option {
+  color: #f25b00;
+}
+
+   /* Estilo do fundo do modal */
+   .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  /* Estilo do conteúdo do modal */
+  .modal-content {
+    background-color: #4A4A4A;
+    padding: 5rem 2rem;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-family: 'UniviaPro';
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .modal-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 2rem;
+    font-family: 'UniviaPro';
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #modal-1, #modal-2, #modal-3, #modal-4, #modal-5, #modal-6 {
+    cursor: pointer;
+  }
