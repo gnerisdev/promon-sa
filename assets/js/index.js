@@ -56,12 +56,12 @@ function closeModal() {
 }
 
 document.getElementById('svg-main').addEventListener('load', function () {
-  this.contentDocument.getElementById("modal-1")?.addEventListener("click", () => openModal(0));
-  this.contentDocument.getElementById("modal-2")?.addEventListener("click", () => openModal(1));
-  this.contentDocument.getElementById("modal-3")?.addEventListener("click", () => openModal(2));
-  this.contentDocument.getElementById("modal-4")?.addEventListener("click", () => openModal(3));
-  this.contentDocument.getElementById("modal-5")?.addEventListener("click", () => openModal(4));
-  this.contentDocument.getElementById("modal-6")?.addEventListener("click", () => openModal(5));
+  this.contentDocument.getElementById("modal-1").addEventListener("click", () => openModal(0));
+  this.contentDocument.getElementById("modal-2").addEventListener("click", () => openModal(1));
+  this.contentDocument.getElementById("modal-3").addEventListener("click", () => openModal(2));
+  this.contentDocument.getElementById("modal-4").addEventListener("click", () => openModal(3));
+  this.contentDocument.getElementById("modal-5").addEventListener("click", () => openModal(4));
+  this.contentDocument.getElementById("modal-6").addEventListener("click", () => openModal(5));
 
   document.getElementById("modal")?.addEventListener("click", (e) => {
     if (e.target.id === "modal") closeModal();

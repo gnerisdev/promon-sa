@@ -258,7 +258,7 @@
   flex-direction: column;
   /* justify-content: space-around; */
   height: 100%;
-  padding: 4.0rem 1.6rem 0 2.4rem;
+  padding: 3.2rem 1.2rem 0 1.2rem;
 }
 
 .section-highlights__list .highlight .top h3 {
@@ -303,14 +303,14 @@
   line-height: 27.12px;
   display: grid;
   grid-template-columns: 45px 1fr;
-  gap: 16px;
+  gap: 0.8rem;
   color: var(--color-white);
   position: relative;
 }
 
 .section-highlights__list .highlight .top li span {
   font-family: 'Lato';
-  font-size: calc(var(--font-size-md) - 2px);
+  font-size: calc(var(--font-size-md) - 3px);
   font-weight: 400;
   margin-top: -6px;
   display: block;
@@ -556,11 +556,11 @@
 
 .section-esg .left img {
   z-index: 2;
-  height: 112px;
+  height: 88px;
 }
 .section-esg__intro-2 .left img {
   z-index: 2;
-  height: 84px;
+  height: 72px;
 }
 
 .section-esg .right {
@@ -601,9 +601,9 @@
 }
 
 .section-esg__intro .right ul {
-  margin-left: 140px;
+  margin-left: 96px;
   z-index: 1 !important;
-  min-width: 400px;
+  min-width: 352px;
 }
 
 .section-esg__intro .right ul li {
