@@ -144,6 +144,14 @@ section {
   }
 }
 
+.text-italic {
+  font-style: italic;
+}
+
+
+
+
+
 .header__top {
   display: flex;
   align-items: center;
