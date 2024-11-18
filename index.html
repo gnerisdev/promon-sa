@@ -7,24 +7,23 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
-
 <body>
   <main class="main">
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <img class="logo" src="./assets/images/Logo.png" alt="">
+          <img class="logo" src="./assets/images/Logo.png" alt="Logo Promon">
 
           <nav class="menu">
             <ul class="items">
               <li><a href="https://www.promon.com.br/relatorioanual/2023s/PSA-2023-PT.pdf" target="_blank">PDF Relatório Anual 2023s</a></li>
               <li><a href="http://www.promon.com.br/relatorioanual/2023s/DF-PSA-2023.pdf" target="_blank">Demonstrações Financeiras 2023s</a></li>
               <div class="language-select">
-                <img src="./assets/images/globe-icon.svg" alt="Globo" class="globe-icon">
-                <span>EN</span>
+                <img src="./assets/images/globe-icon.svg" alt="Icone Globo" class="globe-icon">
+                <span>PT</span>
                 <select onchange="changeLanguage(this.value)">
-                  <option value="en">EN</option>
                   <option value="pt">PT</option>
+                  <option value="en">EN</option>
                 </select>
                 <img src="./assets/images/icon-7.png" alt="Seta para baixo" class="arrow-icon">
               </div>
@@ -32,7 +31,7 @@
           </nav>
         </div>
 
-        <div class="header_floot">
+        <div class="header_floot" data-translate="annual_report">
           <p>Relatório <br> Anual <br> 2024s*</p>
         </div>
       </div>
@@ -42,17 +41,17 @@
       <div class="section-promon__history">
         <div class="description">
           <h3>Promon S.A.</h3>
-          <p>Fundada em 1960, a Promon S.A. é uma holding empresarial com um portfólio de companhias atuantes nos mercados de engenharia, de Tecnologia da Informação e Comunicação (TIC) e de eficiência e transformação digital. Com um perfil único, tem como seus acionistas os profissionais e ex-profissionais da Organização.</p>
+          <p data-translate="promon_description">Fundada em 1960, a Promon S.A. é uma <span class="text-italic">holding</span> empresarial com um portfólio de companhias atuantes nos mercados de engenharia, de Tecnologia da Informação e Comunicação (TIC) e de eficiência e transformação digital. Com um perfil único, tem como seus acionistas os profissionais e ex-profissionais da Organização.</p>
         </div>
         <img src="./assets/images/8312861031dfeecb597569a41414a14b.png" alt="">
       </div>
 
       <div class="section-promon__formed">
         <div class="wrapper-title">
-          <p>A <em>holding</em> Promon S.A. é formada por:</p>
+          <p data-translate="holding_formed">A <em>holding</em> Promon S.A. é formada por:</p>
         </div>
         <div class="wrapper-svg">
-          <object type="image/svg+xml" data="./assets/images/organograma.svg" style="width: 100%;"></object>
+          <object id="svg-main" type="image/svg+xml" data="./assets/images/organograma.svg" style="width: 100%;"></object>
         </div>
       </div>
     </section>
@@ -60,37 +59,34 @@
     <section class="section-highlights">
       <div class="container">
         <div>
-          <h2 class="title">DESTAQUES DE 2024S*</h2>
-          <h6 class="subtitle">*Nota: 2024s se refere ao ano social iniciado em 1º de abril de 2023, com término em 31 de março de 2024.</h6>
+          <h2 class="title" data-translate="highlights">DESTAQUES DE 2024S*</h2>
+          <h6 class="subtitle" data-translate="note">*Nota: 2024s se refere ao ano social iniciado em 1º de abril de 2023, com término em 31 de março de 2024.</h6>
         </div>
-
+    
         <ul class="section-highlights__list">
           <li class="highlight">
             <div class="top">
-              <h3>Promon S.A.</h3>
+              <h3 data-translate="promon_s_a_highlight">Promon S.A.</h3>
               <ul>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-arrow.svg" alt="">
                   </div>
-                  <p>R$ 3,9 milhões <br> <span>de lucro no resultado consolidado</span></p>
+                  <p data-translate="consolidated_profit">R$ 3,9 milhões <br> <span data-translate="consolidated_profit_label">de lucro no resultado consolidado</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-2.svg" alt="">
                   </div>
-                  <p>
-                    R$ 1,37 bilhão <br>
-                    <span>de receita gerencial</span>
-                  </p>
+                  <p data-translate="management_revenue">R$ 1,37 bilhão <br> <span data-translate="management_revenue_label">de receita gerencial</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-3.svg" alt="">
                   </div>
-                  <p>3.398 <br> <span>profissionais</span></p>
+                  <p data-translate="professionals">3.398 <br> <span data-translate="professionals_label">profissionais</span></p>
                 </li>
               </ul>
             </div>
@@ -98,40 +94,37 @@
               <img src="./assets/images/sunset-octavio-frias-oliveira-bridge-sao-paulo-brazil.webp" alt="">
             </div>
           </li>
-
+    
           <li class="highlight">
             <div class="top">
-              <h3>Promon Engenharia</h3>
+              <h3 data-translate="promon_engineering">Promon Engenharia</h3>
               <ul>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-4.svg" alt="">
                   </div>
-                  <p>R$ 281 milhões <br> <span>milhões em vendas</span></p>
+                  <p data-translate="sales">R$ 281 milhões <br> <span data-translate="sales_label">milhões em vendas</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-2.svg" alt="">
                   </div>
-                  <p>R$ 271 milhões <br> <span>em receita bruta</span></p>
+                  <p data-translate="gross_revenue">R$ 271 milhões <br> <span data-translate="gross_revenue_label">em receita bruta</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-5.svg" alt="">
                   </div>
-                  <p>418 <br> <span>profissionais</span></p>
+                  <p data-translate="professionals">418 <br> <span data-translate="professionals_label">profissionais</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-6.svg" alt="">
                   </div>
-                  <p>
-                    Elevação dos índices <br>
-                    <span>de satisfação dos clientes: 76% de NPI (+ 20 pontos percentuais em relação a 2023s) e 85% do Índice de Satisfação Geral (+ 3 pontos percentuais)</span>
-                  </p>
+                  <p data-translate="customer_satisfaction">Elevação dos índices <br> <span data-translate="customer_satisfaction_text">de satisfação dos clientes: 76% de NPI (+ 20 pontos percentuais em relação a 2023s) e 85% do Índice de Satisfação Geral (+ 3 pontos percentuais)</span></p>
                 </li>
               </ul>
             </div>
@@ -139,35 +132,35 @@
               <img src="./assets/images/DSC00362.webp" alt="">
             </div>
           </li>
-
+    
           <li class="highlight">
             <div class="top">
-              <h3>PLogicalis <br> Latin America*</h3>
+              <h3 data-translate="plogicalis">PLogicalis <br> Latin America*</h3>
               <ul>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-arrow.svg" alt="">
                   </div>
-                  <p>R$ 2,8 bilhões <br> <span>em vendas</span></p>
+                  <p data-translate="sales">R$ 2,8 bilhões <br> <span data-translate="sales_label">em vendas</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-2.svg" alt="">
                   </div>
-                  <p>R$ 3,3 bilhões <br> <span>em receita bruta</span></p>
+                  <p data-translate="gross_revenue">R$ 3,3 bilhões <br> <span data-translate="gross_revenue_label">em receita bruta</span></p>
                   <div class="line"></div>
                 </li>
                 <li>
                   <div class="wrapper-icon">
                     <img src="./assets/images/icon-5.svg" alt="">
                   </div>
-                  <p>2.980 <br> <span>profissionais</span></p>
+                  <p data-translate="professionals">2.980 <br> <span data-translate="professionals_label">profissionais</span></p>
                 </li>
-
+    
                 <li style="display: flex;">
                   <p>
-                    <span class="text-italic">*O ano fiscal da Logicalis considera o período entre 1º de março de 2023 e 29 de fevereiro de 2024.</span>
+                    <span class="text-italic" data-translate="note_logicalis">*O ano fiscal da Logicalis considera o período entre 1º de março de 2023 e 29 de fevereiro de 2024.</span>
                   </p>
                 </li>
               </ul>
@@ -182,32 +175,46 @@
 
     <section class="section-foundation">
       <div class="container">
-        <h2 class="title">Fundação Promon de Previdência Social (FPPS)*</h2>
+        <h2 class="title" data-translate="foundation_title">Fundação Promon de Previdência Social (FPPS)*</h2>
         
         <div class="section-foundation__plan">
           <img src="./assets/images/moca.webp" alt="">
           <div class="background-blue">
             <div class="wrapper-info">
-              <h3 class="title">Planos previdenciários</h3>
-              <h4>Plano MultiFlex</h4>
-              <p>Modalidade contribuição definida</p> <br>
-              <h4>Promon BásicoPlus</h4>
-              <p>Modalidade benefício definido</p>
+              <h3 class="title" data-translate="pension_plans_title">Planos previdenciários</h3>
+              <h4 data-translate="plan_multiflex">Plano MultiFlex</h4>
+              <p data-translate="defined_contribution">Modalidade contribuição definida</p> <br>
+              <h4 data-translate="plan_promon_basicplus">Promon BásicoPlus</h4>
+              <p data-translate="defined_benefit">Modalidade benefício definido</p>
             </div>
           </div>
         </div>
-
+    
         <div class="section-foundation__results-2023">
-          <h3 class="title">Resultados 2023</h3>
+          <h3 class="title" data-translate="results_2023_title">Resultados 2023</h3>
           <div class="cards">
             <div class="card">
-              <p><span>R$ <span class="money">1,9</span> bilhão</span><br>de investimentos totais dois dos planos</p>
+              <p>
+                <span data-translate="total_investments_value">R$ 
+                  <span class="money">1,9</span> bilhão
+                </span> <br>
+                <span  class="text" data-translate="total_investments_text">de investimentos totais dos dois planos</span>
+              </p>
             </div>
             <div class="card">
-              <p><span>R$ <span class="money">124,5</span> milhões</span><br>em benefícios pagos aos 759 participantes assistidos</p>
+              <p>
+                <span data-translate="benefits_paid_value">R$ 
+                  <span class="money">124,5</span> milhões
+                </span> <br>
+                <span class="text" data-translate="benefits_paid_text">em benefícios pagos aos 759 participantes assistidos</span>
+              </p>
             </div>
             <div class="card">
-              <p><span>R$ <span class="money">22,4</span> milhões</span><br>recebidos em contribuições<br> previdenciais dos 1.449 participantes ativos e autopatrocinados</p>
+              <p>
+                <span data-translate="contributions_received_value">R$ 
+                  <span class="money">22,4</span> milhões
+                </span> <br>
+                <span class="text" data-translate="contributions_received_text">recebidos em contribuições previdenciais dos 1.449 participantes ativos e autopatrocinados</span></p>
             </div>
           </div>
         </div>
@@ -216,12 +223,12 @@
 
     <section class="section-esg">
       <div class="container">
-        <h2 class="title">ESG na Promon</h2>
-        <h3 class="subtitle">
+        <h2 class="title" data-translate="esg_title">ESG na Promon</h2>
+        <h3 class="subtitle" data-translate="esg_subtitle">
           Confira, abaixo, as principais iniciativas das empresas da Promon S.A. nos aspectos ambientais, sociais <br> e de governança durante 2024s.
         </h3>
       </div>
-      
+    
       <section class="section-esg__main">
         <div class="container">
           <div class="section-esg__intro">
@@ -230,30 +237,30 @@
             </div>
             <div class="right">
               <ul>
-                <li>Criação da área de Desenvolvimento Sustentável para acelerar a integração da estratégia ESG nos processos e negócios.</li>
-                <li>Implementação das ESG Meetings, reuniões de análise do potencial ESG de cada novo projeto que chega à Companhia.</li>
-                <li>Criação de três grupos de afinidade com alto nível de participação e engajamento dos funcionários: Equidade racial e de gênero; LGBTQIA+; e Parentalidade.</li>
-                <li>Realização do primeiro mapeamento de emissões de gases de efeito estufa da Companhia.</li>
-                <li>Primeira aquisição de Reduções Certificadas de Emissões (RCEs), equivalentes a 348 toneladas de CO₂.</li>
+                <li data-translate="esg_initiative_1">Criação da área de Desenvolvimento Sustentável para acelerar a integração da estratégia ESG nos processos e negócios.</li>
+                <li data-translate="esg_initiative_2">Implementação das ESG Meetings, reuniões de análise do potencial ESG de cada novo projeto que chega à Companhia.</li>
+                <li data-translate="esg_initiative_3">Criação de três grupos de afinidade com alto nível de participação e engajamento dos funcionários: Equidade racial e de gênero; LGBTQIA+; e Parentalidade.</li>
+                <li data-translate="esg_initiative_4">Realização do primeiro mapeamento de emissões de gases de efeito estufa da Companhia.</li>
+                <li data-translate="esg_initiative_5">Primeira aquisição de Reduções Certificadas de Emissões (RCEs), equivalentes a 348 toneladas de CO₂.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
+    
       <section class="section-esg__main" style="background: linear-gradient(to left, #194BFF 40%, #F5F5F5 60%);">
         <div class="container">
           <div class="section-esg__intro section-esg__intro-2">
             <div class="left">
               <img src="./assets/images/logo-logicalis.png" alt="" srcset="">
-            </div>            
+            </div>
             <div class="right">
               <ul>
-                <li>Iniciativas voltadas à descarbonização, como monitoramento e neutralização das emissões de carbono e transporte por veículo elétrico.</li>
-                <li>Logística reversa para descarte sustentável de lixo eletrônico.</li>
-                <li>Lançamento do grupo de afinidade LogiBrave (PcDs + neurodiversos), acompanhando os outros grupos existentes: LogiPride (LGBTQIA+), LogiWomen (mulheres) e LogiBold (negros e pardos).</li>
-                <li>Inserção do tema de diversidade e inclusão na pesquisa interna de satisfação da Empresa.</li>
-                <li>Estabelecimento de parceria com a Iniciativa Empresarial pela Igualdade Racial.</li>
+                <li data-translate="esg_initiative_6">Iniciativas voltadas à descarbonização, como monitoramento e neutralização das emissões de carbono e transporte por veículo elétrico.</li>
+                <li data-translate="esg_initiative_7">Logística reversa para descarte sustentável de lixo eletrônico.</li>
+                <li data-translate="esg_initiative_8">Lançamento do grupo de afinidade LogiBrave (PcDs + neurodiversos), acompanhando os outros grupos existentes: LogiPride (LGBTQIA+), LogiWomen (mulheres) e LogiBold (negros e pardos).</li>
+                <li data-translate="esg_initiative_9">Inserção do tema de diversidade e inclusão na pesquisa interna de satisfação da Empresa.</li>
+                <li data-translate="esg_initiative_10">Estabelecimento de parceria com a Iniciativa Empresarial pela Igualdade Racial.</li>
               </ul>
             </div>
           </div>
@@ -263,9 +270,9 @@
 
     <section class="section-esg-mobile">
       <div class="container">
-        <h2 class="title">ESG na Promon</h2>
-        <h3 class="subtitle">
-          Confira, abaixo, as principais iniciativas das empresas da Promon S.A. nos aspectos ambientais, sociais e de governança durante 2024.
+        <h2 class="title" data-translate="esg_title">ESG na Promon</h2>
+        <h3 class="subtitle" data-translate="esg_subtitle">
+          Confira, abaixo, as principais iniciativas das empresas da Promon S.A. nos aspectos ambientais, sociais <br> e de governança durante 2024s.
         </h3>
       </div>
     
@@ -277,11 +284,11 @@
             </div>
             <div class="right">
               <ul>
-                <li>Criação da área de Desenvolvimento Sustentável para acelerar a integração da estratégia ESG nos processos e negócios.</li>
-                <li>Implementação das ESG Meetings, reuniões de análise do potencial ESG de cada novo projeto que chega à Companhia.</li>
-                <li>Criação de três grupos de afinidade com alto nível de participação e engajamento dos funcionários: Equidade racial e de gênero; LGBTQIA+; e Parentalidade.</li>
-                <li>Realização do primeiro mapeamento de emissões de gases de efeito estufa da Companhia.</li>
-                <li>Primeira aquisição de Reduções Certificadas de Emissões (RCEs), equivalentes a 348 toneladas de CO₂.</li>
+                <li data-translate="esg_initiative_1">Criação da área de Desenvolvimento Sustentável para acelerar a integração da estratégia ESG nos processos e negócios.</li>
+                <li data-translate="esg_initiative_2">Implementação das ESG Meetings, reuniões de análise do potencial ESG de cada novo projeto que chega à Companhia.</li>
+                <li data-translate="esg_initiative_3">Criação de três grupos de afinidade com alto nível de participação e engajamento dos funcionários: Equidade racial e de gênero; LGBTQIA+; e Parentalidade.</li>
+                <li data-translate="esg_initiative_4">Realização do primeiro mapeamento de emissões de gases de efeito estufa da Companhia.</li>
+                <li data-translate="esg_initiative_5">Primeira aquisição de Reduções Certificadas de Emissões (RCEs), equivalentes a 348 toneladas de CO₂.</li>
               </ul>
             </div>
           </div>
@@ -296,11 +303,11 @@
             </div>
             <div class="right">
               <ul class="secondary">
-                <li>Iniciativas voltadas à descarbonização, como monitoramento e neutralização das emissões de carbono e transporte por veículo elétrico.</li>
-                <li>Logística reversa para descarte sustentável de lixo eletrônico.</li>
-                <li>Lançamento do grupo de afinidade LogiBrave (PcDs + neurodiversos), acompanhando os outros grupos existentes: LogiPride (LGBTQIA+), LogiWomen (mulheres) e LogiBold (negros e pardos).</li>
-                <li>Inserção do tema de diversidade e inclusão na pesquisa interna de satisfação da Empresa.</li>
-                <li>Estabelecimento de parceria com a Iniciativa Empresarial pela Igualdade Racial.</li>
+                <li data-translate="esg_initiative_6">Iniciativas voltadas à descarbonização, como monitoramento e neutralização das emissões de carbono e transporte por veículo elétrico.</li>
+                <li data-translate="esg_initiative_7">Logística reversa para descarte sustentável de lixo eletrônico.</li>
+                <li data-translate="esg_initiative_8">Lançamento do grupo de afinidade LogiBrave (PcDs + neurodiversos), acompanhando os outros grupos existentes: LogiPride (LGBTQIA+), LogiWomen (mulheres) e LogiBold (negros e pardos).</li>
+                <li data-translate="esg_initiative_9">Inserção do tema de diversidade e inclusão na pesquisa interna de satisfação da Empresa.</li>
+                <li data-translate="esg_initiative_10">Estabelecimento de parceria com a Iniciativa Empresarial pela Igualdade Racial.</li>
               </ul>
             </div>
           </div>
@@ -310,10 +317,12 @@
     
     <footer class="footer">
       <div class="container">
-        <span class="footer__text">QUER SABER MAIS?</span> <br>
-        <span class="footer__text-2">Acesse o <span>relatório completo</span> de 2024s da Promon S.A.</span>
+        <span class="footer__text" data-translate="footer_want_to_know_more">QUER SABER MAIS?</span>
+        <span class="footer__text-2" data-translate="footer_access_full_report">
+          Acesse o <span data-translate="footer_full_report">relatório completo</span> de 2024s da Promon S.A.
+        </span>
       </div>
-    </footer>
+    </footer>    
 
     <div class="modal-background hidden" id="modal">
       <div class="modal-content" id="modal-content">
@@ -322,5 +331,7 @@
       </div>
     </div>
   </main>
+
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>

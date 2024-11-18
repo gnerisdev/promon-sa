@@ -20,20 +20,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3rem;
-  gap: 1.4rem;
+  padding-top: 3.2rem;
+  gap: 1.6rem;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header__top {
+    flex-direction: column;
     justify-content: center;
   }
 }
 
 .header__top .menu {
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 22.54px;
-  padding: 1.4rem 2rem;
+  padding: 1.6rem 2.4rem;
 }
 
 .header__top .menu .items {
@@ -54,18 +55,18 @@
 .header__top .menu .items li a {
   list-style: none;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   font-family: 'UniviaPro';
   line-height: 24.79px;
-  color: #E04403;
+  color: var(--color-primary);
 }
 
 .header_floot {
-  background: #e04403;
+  background: var(--color-primary);
   width: fit-content;
-  color: #ffffff;
-  font-size: 2.7rem;
-  padding: 4rem 4rem 1rem 2rem;
+  color: var(--color-white);
+  font-size: var(--font-size-hero);
+  padding: 5.6rem 5.6rem 2.4rem 3.2rem;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
   position: absolute;
   bottom: 0;
@@ -75,11 +76,56 @@
   line-height: 50.49px;
 }
 
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-select {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #f25b00;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #f25b00;
+  position: relative;
+  font-family: 'UniviaPro';
+}
+
+.language-select img.globe-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.language-select select {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0);
+  font-size: inherit;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  left: 0;
+  z-index: 2;
+}
+
+.language-select select option {
+  color: #f25b00;
+}
+
 /* Section Promon */
 .section-promon {
+  padding-top: 0;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));  
 }
 @media (max-width: 768px) {
   .section-promon {
@@ -96,27 +142,28 @@
 
 .section-promon__history .description {
   position: absolute;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-promon__history .description h3 {
   font-family: 'UniviaPro';
-  font-size: 1.4rem;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   line-height: 62.4px;
   text-align: left;
-  color: #fff;
+  color: var(--color-white);
   padding-left: 1rem;
 }
 
 .section-promon__history .description p {
   font-family: Lato;
-  font-size: 0.9rem;
+  font-size: var(--font-size-md);
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: 24px;
   text-align: start;
-  color: #fff;
-  background: #E04403;
+  color: var(--color-white);
+  background: var(--color-primary);
   padding: 0 1rem 1rem;
 }
 
@@ -149,13 +196,13 @@
 
 .section-promon__formed .wrapper-title {
   margin-top: 2rem;
-  background: #e04403;
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-white);
   width: fit-content;
   padding: 1rem 2rem;
   clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
   font-family: Univia Pro;
-  font-size: 16px;
+  font-size: var(--font-size-md);
   font-style: italic;
   font-weight: 400;
   text-align: left;
@@ -164,15 +211,15 @@
 /* Section Highlights */
 .section-highlights .title {
   font-family: 'UniviaPro';
-  font-size: 35px;
+  font-size: var(--font-size-xxl);
   text-align: center;
-  color: #e04403;
+  color: var(--color-primary);
 }
 
 .section-highlights .subtitle {
   margin-top: 0.6rem;
   font-family: 'UniviaPro';
-  font-size: 13px;
+  font-size: var(--font-size-xs);
   font-style: italic;
   font-weight: 400;
   line-height: 15.6px;
@@ -187,7 +234,7 @@
 }
 
 .section-highlights__list .highlight {
-  background: #3f186f;
+  background: var(--color-secondary);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -198,28 +245,28 @@
 }
 
 .section-highlights__list .highlight:nth-child(2) {
-  background: #e04403;
+  background: var(--color-primary);
 }
 
 .section-highlights__list .highlight:nth-child(3) {
-  background: #194bff;
+  background: var(--color-blue);
 }
 
 .section-highlights__list .highlight .top {
-  display: flex;
+  display: grid;
+  grid-template-rows: 5.2rem auto;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100%;
-  padding: 1.4rem 1.5rem 0 1.8rem;
+  padding: 4.0rem 1.6rem 0 2.4rem;
 }
 
 .section-highlights__list .highlight .top h3 {
   font-family: 'UniviaPro';
-  font-size: 1.6rem;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
-  margin-bottom: 8px;
+  color: var(--color-white);
 }
 
 .section-highlights__list .highlight .top ul {
@@ -232,7 +279,7 @@
 .section-highlights__list .highlight .top .wrapper-icon {
   width: 43px;
   height: 43px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--color-white);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -240,44 +287,42 @@
 }
 
 .section-highlights__list .highlight:nth-child(1) .wrapper-icon {
-  background: #3f186f;
+  background: var(--color-secondary);
 }
 .section-highlights__list .highlight:nth-child(2) .wrapper-icon {
-  background: #e04403;
+  background: var(--color-primary);
 }
 .section-highlights__list .highlight:nth-child(3) .wrapper-icon {
-  background: #194bff;
+  background: var(--color-blue);
 }
 
 .section-highlights__list .highlight .top li {
   font-family: 'UniviaPro';
-  font-size: 1.2rem;
+  font-size: var(--font-size-md);
   font-weight: 400;
   line-height: 27.12px;
   display: grid;
   grid-template-columns: 45px 1fr;
-  align-items: top;
   gap: 16px;
-  color: #ffffff;
+  color: var(--color-white);
   position: relative;
 }
 
+.section-highlights__list .highlight .top li span {
+  font-family: 'Lato';
+  font-size: calc(var(--font-size-md) - 2px);
+  font-weight: 400;
+  margin-top: -6px;
+  display: block;
+}
+
 .section-highlights__list .highlight .top li .line {
-  background: #ffffff;
+  background: var(--color-white);
   width: 1px;
   height: 100%;
   position: absolute;
   left: 21px;
   top: 45px;
-}
-
-.section-highlights__list .highlight .top li span {
-  font-family: 'Lato';
-  font-size: 0.8rem;
-  font-weight: 400;
-  margin-top: -6px;
-  display: block;
-  /* white-space: nowrap; */
 }
 
 .section-highlights__list .highlight .bottom img {
@@ -293,10 +338,10 @@
 
 .section-foundation .title {
   font-family: 'UniviaPro';
-  font-size: 35px;
+  font-size: var(--font-size-xxl);
   font-weight: 400;
   text-align: center;
-  color: #e04403;
+  color: var(--color-primary);
 }
 
 .section-foundation__plan {
@@ -308,7 +353,7 @@
 @media (max-width: 768px) {
   .section-foundation__plan {
     grid-template-columns: 1fr;
-    background: #003D6A;
+    background: var(--color-dark-blue);
   }
 }
 
@@ -322,14 +367,14 @@
 
 .section-foundation__plan .background-blue {
   position: absolute;
-  background: #003D6A;
+  background: var(--color-dark-blue);
   height: 197px;
   width: 100%;
 }
 @media (max-width: 768px) {
   .section-foundation__plan .background-blue {
     position: initial;
-    border-top: 4px solid #fff;
+    border-top: 4px solid var(--color-white);
     height: auto;
     padding: 2rem 0;
   }
@@ -337,17 +382,18 @@
 
 .section-foundation__plan .background-blue .title {
   font-family: 'UniviaPro';
-  font-size: 22px;
+  font-size: var(--font-size-xl);
   font-weight: 800;
   line-height: 26.4px;
-  color: #003D6A;
+  color: var(--color-dark-blue);
   position: absolute;
-  top: -70%;
+  top: -100%;
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   .section-foundation__plan .background-blue .title {
     position: static;
-    color: #fff;
+    color: var(--color-white);
     margin-bottom: 1rem;
   }
 }
@@ -372,16 +418,16 @@
 
 .section-foundation__plan .wrapper-info h4 {
   font-family: 'UniviaPro';
-  font-size: 21.09px;
+  font-size: var(--font-size-lg);
   font-weight: 400;
   line-height: 25.31px;
-  color: #E04403;
+  color: var(--color-primary);
 }
 
 .section-foundation__plan .wrapper-info p {
   font-family: 'Lato';
-  font-size: 1.25rem;
-  color: #ffffff;
+  font-size: var(--font-size-md);
+  color: var(--color-white);
 }
 
 .section-foundation__results-2023 {
@@ -410,14 +456,14 @@
   font-weight: 800;
   line-height: 26.4px;
   text-align: center;
-  color: #789e91;
+  color: var(--color-teal);
 }
 
 .section-foundation__results-2023 .card {
-  background-color: #6b8e84;
+  background-color: var(--color-teal-alt);
   padding: 0.8rem 1rem;
   border-radius: 10px;
-  color: #fff;
+  color: var(--color-white);
   max-width: fit-content;
   height: fit-content;
 }
@@ -426,24 +472,25 @@
   min-height: 80px;
 }
 
-.section-foundation__results-2023 .card p {
-  font-size: 1rem;
+.section-foundation__results-2023 .card .text {
+  font-size: var(--font-size-md);
   font-family: Lato;
   font-weight: 400;
+  color: var(--color-white);
 }
 
 .section-foundation__results-2023 .card span {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
   font-weight: 400;
-  color: #003d6a;
+  color: var(--color-dark-blue);
   font-family: 'UniviaPro';
-  font-size: 21.09px;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   line-height: 25.31px;
 }
 
 .section-foundation__results-2023 .card span .money {
-  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
 }
 
 /* Section ESG */
@@ -454,19 +501,19 @@
 
 .section-esg .title {
   font-family: 'UniviaPro';
-  font-size: 35px;
+  font-size: var(--font-size-xxl);
   font-weight: 400;
   text-align: center;
-  color: #e04403;
+  color: var(--color-primary);
 }
 
 .section-esg .subtitle {
   font-family: 'UniviaPro';
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   line-height: 19.2px;
   text-align: center;
-  color: #54565a;
+  color: var(--color-grey);
   margin-top: 1rem;
 }
 
@@ -475,13 +522,12 @@
   flex-direction: row;
   color: white;
   font-family: system-ui;
-  font-size: 2rem;
+  font-size: var(--font-size-lg);
   overflow: hidden;
   margin: 0 auto;
 }
 
-.section-esg .left,
-.section-esg .right {
+.section-esg .left, .section-esg .right {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -495,22 +541,26 @@
 .section-esg .left::after {
   content: '';
   position: absolute;
-  background: #f5f5f5;
+  background: var(--color-light-grey);
   top: 0;
   bottom: 0;
   right: 0;
   width: 100vw;
   transform: skew(-25deg);
-  z-index: 10;
+  z-index: 1;
 }
 
 .section-esg .left {
-  z-index: 999;
+  z-index: 2;
 }
 
 .section-esg .left img {
-  z-index: 999;
-  height: 60px;
+  z-index: 2;
+  height: 112px;
+}
+.section-esg__intro-2 .left img {
+  z-index: 2;
+  height: 84px;
 }
 
 .section-esg .right {
@@ -521,29 +571,29 @@
 .section-esg .right::before {
   content: '';
   position: absolute;
-  background: #e04403;
+  background: var(--color-primary);
   top: 0;
   bottom: 0;
   left: 0;
   width: 100vw;
   transform: skew(-25deg);
-  z-index: 10;
+  z-index: 1;
 }
 
 .section-esg .right::before {
   content: '';
   position: absolute;
-  background: #e04403;
+  background: var(--color-primary);
   top: 0;
   bottom: 0;
   left: 0;
   width: 100vw;
   transform: skew(-25deg);
-  z-index: 10;
+  z-index: 1;
 }
 
 .section-esg__intro-2 .right::before {
-  background: #194bff;
+  background: var(--color-blue);
 }
 
 .section-esg .right {
@@ -552,28 +602,28 @@
 
 .section-esg__intro .right ul {
   margin-left: 140px;
-  z-index: 9999 !important;
+  z-index: 1 !important;
   min-width: 400px;
 }
 
 .section-esg__intro .right ul li {
   list-style: disc;
   font-family: 'Lato';
-  font-size: 0.9rem;
+  font-size: var(--font-size-md);
   font-weight: 400;
-  line-height: 32px;
-  color: #fff;
+  line-height: 26px;
+  color: var(--color-white);
   text-align: left;
 }
 
 span {
-  z-index: 20;
+  z-index: 2;
 }
 
 .section-esg__main {
   padding: 0;
-  background: linear-gradient(to left, #e04403 50%, #f5f5f5 50%);
-  overflow-x: auto;
+  background: linear-gradient(to left, var(--color-primary) 50%, var(--color-light-grey) 50%);
+  overflow-x: hidden;
 }
 
 .section-esg__main .container {
@@ -596,25 +646,25 @@ span {
 }
 
 .section-esg-mobile {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   padding: 20px 0;
 }
 
 .section-esg-mobile .title {
   font-family: 'UniviaPro';
-  font-size: 35px;
+  font-size: var(--font-size-xxl);
   font-weight: 400;
   text-align: center;
-  color: #e04403;
+  color: var(--color-primary);
 }
 
 .section-esg-mobile .subtitle {
   font-family: 'UniviaPro';
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   line-height: 19.2px;
   text-align: center;
-  color: #54565a;
+  color: var(--color-grey);
   margin-top: 1rem;
 }
 
@@ -626,48 +676,46 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f5f5f5;
-  padding-top: 16px;
-  margin-top: 1rem;
+  background: var(--color-light-grey);
+  padding-top: 2.4rem;
+  margin-top: 0.8rem;
 }
 
 .section-esg-mobile__intro .left {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .section-esg-mobile__intro .right {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .section-esg-mobile__intro .right ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  background: #e04403;
-  padding: 1rem 2rem;
+  background: var(--color-primary);
+  padding: 1.6rem 3.2rem;
 }
 
 .section-esg-mobile__intro .right .secondary {
-  background: #194BFF;
+  background: var(--color-blue);
 }
-
 
 .section-esg-mobile__intro .right ul li {
   list-style: disc;
   font-family: 'Lato';
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   font-weight: 400;
-  line-height: 22px;
-  color: #fff5f5;
+  line-height: 24px;
+  color: var(--soft-pink);
   text-align: left;
 }
 
 .section-esg-mobile__intro img {
   text-align: center;
-  height: 50px;
+  height: 56px;
   margin: auto;
 }
 
@@ -677,16 +725,16 @@ span {
 
 /* footer */
 .footer { 
-  background: #3F186F;
-  color: #ffffff;
-  padding: 2rem 0;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: 3.2rem 0;
   display: flex;
   justify-content: center;
 }
 
 .footer__text {
   font-family: 'UniviaPro';
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
   font-weight: 800;
   line-height: 32px;
   text-align: center;
@@ -695,16 +743,14 @@ span {
 
 .footer__text-2 {
   font-family: 'UniviaPro';
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: var(--font-size-md);
+  line-height: 24px;
   text-align: center;
   text-decoration-style: solid;
   display: block;
 }
 
-
 .footer__text-2 span {
-  color: #E75300;
+  color: var(--color-primary);
   text-transform: uppercase;
 }

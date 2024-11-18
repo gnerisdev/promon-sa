@@ -1,3 +1,4 @@
+/* Fontes */
 @font-face {
   font-family: 'UniviaPro';
   src: url('../fonts/Univia/UniviaPro-Black.otf') format('opentype');
@@ -117,132 +118,155 @@
   font-style: italic;
 }
 
-section {
-  padding: 2rem 0;
+/* Default */
+:root {
+  /* Text Size */
+  --font-size-xs: 1rem;
+  /* 10px */
+  --font-size-sm: 1.2rem;
+  /* 12px */
+  --font-size-md: 1.6rem;
+  /* 16px */
+  --font-size-lg: 2rem;
+  /* 20px */
+  --font-size-xl: 2.4rem;
+  /* 24px */
+  --font-size-xxl: 3.2rem;
+  /* 32px */
+  --font-size-hero: 4rem;
+  /* 40px */
+
+  /* Colors */
+  --color-white: #ffffff;
+  /* Branco */
+  --color-primary: #e04403;
+  /* Laranja primário */
+  --color-secondary: #3f186f;
+  /* Roxo escuro */
+  --color-blue: #194bff;
+  /* Azul intenso */
+  --color-dark-blue: #003d6a;
+  /* Azul escuro */
+  --color-grey: #54565a;
+  /* Cinza escuro */
+  --color-light-grey: #f5f5f5;
+  /* Cinza claro */
+  --color-teal: #789e91;
+  /* Verde acinzentado */
+  --color-teal-alt: #6b8e84;
+  /* Verde acinzentado alternativo */
+  --soft-pink: #fff5f5;
+  /* Rosa claro (leve tom rosado) */
 }
 
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 3.2rem 0;
+}
+
+/* Container */
 .container {
   max-width: 1320px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
+/* Scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+
 .text-italic {
   font-style: italic;
 }
 
-
-
-
-
-.header__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.language-select {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  color: #f25b00;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  cursor: pointer;
-  border: 1px solid #f25b00;
-  position: relative;
-  font-family: 'UniviaPro'
-}
-
-.language-select img.globe-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.language-select select {
-  background: none;
-  border: none;
-  color: rgba(255, 255, 255, 0);
-  font-size: inherit;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
+/* Modal */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
-.language-select select option {
-  color: #f25b00;
+.modal-content {
+  background-color: #4A4A4A;
+  padding: 5rem 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-   /* Estilo do fundo do modal */
-   .modal-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-family: 'UniviaPro';
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  text-align: center;
+}
 
-  /* Estilo do conteúdo do modal */
-  .modal-content {
-    background-color: #4A4A4A;
-    padding: 5rem 2rem;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
+.modal-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 2rem;
+  font-family: 'UniviaPro';
+  text-align: center;
+}
 
-  .modal-content h2 {
-    margin-top: 0;
-    font-size: 24px;
-    font-family: 'UniviaPro';
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38px;
-    text-align: center;
-  }
+.hidden {
+  display: none;
+}
 
-  .modal-content p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-top: 2rem;
-    font-family: 'UniviaPro';
-    text-align: center;
-  }
-  
-  .hidden {
-    display: none;
-  }
-
-  #modal-1, #modal-2, #modal-3, #modal-4, #modal-5, #modal-6 {
-    cursor: pointer;
-  }
+#modal-1,
+#modal-2,
+#modal-3,
+#modal-4,
+#modal-5,
+#modal-6 {
+  cursor: pointer;
+}
