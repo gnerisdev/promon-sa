@@ -542,13 +542,14 @@
 }
 
 .section-esg .left, .section-esg .right {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section-esg .left {
+  width: 45%;
   position: relative;
 }
 
@@ -570,11 +571,11 @@
 
 .section-esg .left img {
   z-index: 2;
-  height: 88px;
+  height: 80px;
 }
 .section-esg__intro-2 .left img {
   z-index: 2;
-  height: 72px;
+  height: 56px;
 }
 
 .section-esg .right {
@@ -611,13 +612,13 @@
 }
 
 .section-esg .right {
-  padding: 2rem;
+  padding: 2.4rem;
 }
 
 .section-esg__intro .right ul {
   margin-left: 96px;
   z-index: 1 !important;
-  min-width: 352px;
+  min-width: 384px;
 }
 
 .section-esg__intro .right ul li {
