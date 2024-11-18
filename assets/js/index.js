@@ -9,7 +9,7 @@ const modalsText = [
     background: "#194BFF",
     color: "#fff",
     title: "Logicalis Latin America",
-    desc: "Empresa de soluções e serviços de Tecnologia da Informação e Comunicação (TIC) que atende setores diversos, com operação em 12 países da América Latina. Foi formada por uma joint venture entre a Promon S.A. e a companhia britânica Logicalis Group Limited."
+    desc: "Empresa de soluções e serviços de Tecnologia da Informação e Comunicação (TIC) que atende setores diversos, com operação em 12 países da América Latina. Foi formada por uma <span class='text-italic'>joint venture</span> entre a Promon S.A. e a companhia britânica Logicalis Group Limited."
   },
   {
     background: "#54565A",
@@ -62,7 +62,7 @@ document.getElementById('svg-main').addEventListener('load', function () {
   this.contentDocument.getElementById("modal-4").addEventListener("click", () => openModal(3));
   this.contentDocument.getElementById("modal-5").addEventListener("click", () => openModal(4));
   this.contentDocument.getElementById("modal-6").addEventListener("click", () => openModal(5));
-
+  document.getElementById("modal-close")?.addEventListener("click", (e) => closeModal());
   document.getElementById("modal")?.addEventListener("click", (e) => {
     if (e.target.id === "modal") closeModal();
   });

@@ -235,9 +235,10 @@ section {
   width: 90%;
   max-width: 500px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: var(--color-white);
   font-family: Arial, sans-serif;
   text-align: center;
+  position: relative;
 }
 
 .modal-content h2 {
@@ -258,15 +259,16 @@ section {
   text-align: center;
 }
 
-.hidden {
-  display: none;
+.modal-close-button {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  font-family: 'UniviaPro';
 }
 
-#modal-1,
-#modal-2,
-#modal-3,
-#modal-4,
-#modal-5,
-#modal-6 {
-  cursor: pointer;
+.hidden {
+  display: none;
 }
