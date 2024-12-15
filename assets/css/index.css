@@ -328,6 +328,7 @@
   font-weight: 400;
   margin-top: -6px;
   display: block;
+  line-height: 1.8;
 }
 
 .section-highlights__list .highlight .top li .line {
