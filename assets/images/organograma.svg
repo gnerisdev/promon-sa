@@ -7,9 +7,24 @@
    version="1.1"
    id="svg97"
    xml:space="preserve"
+   sodipodi:docname="organograma.svg"
+   inkscape:export-filename="organograma.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><rect
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false" /><rect
      width="547"
      height="624"
      fill="url(#pattern0_2738_154)"
@@ -234,13 +249,12 @@
        transform="translate(277.41078,560.24918)">
        
        <rect
-        style="transform: translateX(-5px)"
-         width="165"
-         height="49"
-         fill="url(#pattern0_2738_168)"
-         id="rect1-3"
-         x="0"
-         y="0" />
+   width="165"
+   height="49"
+   fill="url(#pattern0_2738_168)"
+   id="rect1-3"
+   x="0"
+   y="0" />
          
          </g></g><g
      id="logicalis" style="cursor: pointer; z-index: 999"><rect
@@ -432,4 +446,21 @@
          id="path19-1" /><path
          d="m 84.7269,34.1249 h -0.8831 c -0.1827,0 -0.3349,-0.0304 -0.4364,-0.0812 -0.1016,-0.0508 -0.1828,-0.1727 -0.2335,-0.3353 l -0.1726,-0.5791 c -0.203,0.1829 -0.406,0.3454 -0.609,0.4877 -0.203,0.1422 -0.406,0.254 -0.6192,0.3555 -0.2131,0.0915 -0.4365,0.1728 -0.6801,0.2134 -0.2436,0.0406 -0.5075,0.0711 -0.7917,0.0711 -0.3451,0 -0.6598,-0.0508 -0.9542,-0.1422 -0.2943,-0.0915 -0.538,-0.2337 -0.7511,-0.4166 -0.2132,-0.1828 -0.3756,-0.4165 -0.4873,-0.6908 -0.1116,-0.2743 -0.1725,-0.5994 -0.1725,-0.9651 0,-0.3048 0.0812,-0.6096 0.2436,-0.9143 0.1624,-0.3048 0.4263,-0.569 0.8019,-0.8128 0.3756,-0.2438 0.8831,-0.447 1.5023,-0.5994 0.6192,-0.1524 1.4008,-0.2438 2.3346,-0.2438 v -0.4775 c 0,-0.5486 -0.1116,-0.955 -0.3451,-1.2191 -0.2335,-0.2641 -0.5684,-0.3962 -1.0049,-0.3962 -0.3147,0 -0.5786,0.0406 -0.7917,0.1117 -0.2132,0.0712 -0.3959,0.1626 -0.5482,0.254 -0.1522,0.0915 -0.3045,0.1727 -0.4365,0.254 -0.1319,0.0711 -0.274,0.1118 -0.4364,0.1118 -0.132,0 -0.2436,-0.0305 -0.3452,-0.1016 -0.0913,-0.0712 -0.1725,-0.1524 -0.2334,-0.254 l -0.3553,-0.6299 c 0.9339,-0.8635 2.0707,-1.2902 3.4005,-1.2902 0.477,0 0.9034,0.0813 1.2789,0.2336 0.3756,0.1524 0.6903,0.3759 0.9542,0.6502 0.2639,0.2743 0.4568,0.6096 0.5887,0.9956 0.132,0.3861 0.203,0.8128 0.203,1.27 v 5.1609 z m -3.8166,-1.2292 c 0.203,0 0.3857,-0.0204 0.5583,-0.0508 0.1726,-0.0305 0.335,-0.0915 0.4771,-0.1626 0.1522,-0.0711 0.2943,-0.1625 0.4365,-0.2743 0.1421,-0.1117 0.2842,-0.2336 0.4263,-0.3759 v -1.3715 c -0.5685,0 -1.0557,0.0407 -1.4414,0.1118 -0.3857,0.0711 -0.6903,0.1625 -0.9237,0.2743 -0.2335,0.1117 -0.3959,0.2438 -0.4974,0.3962 -0.1015,0.1524 -0.1421,0.3149 -0.1421,0.4876 0,0.3455 0.1015,0.5994 0.3045,0.7417 0.203,0.1422 0.4669,0.2235 0.8019,0.2235 z"
          fill="#3f4144"
-         id="path20-2" /></g></g></svg>
+         id="path20-2" /></g></g><rect
+     style="opacity:1;fill:#ffffff;fill-opacity:0.997867;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4.5;stroke-opacity:0.984314;paint-order:markers fill stroke"
+     id="rect6"
+     width="125.1058"
+     height="30.953197"
+     x="149.34967"
+     y="117.47189" /><text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:19.5136px;line-height:1.25;font-family:sans-serif;fill:#3f186f;fill-opacity:1;stroke:#3f186f;stroke-width:0.48784;stroke-opacity:1"
+     x="156.88899"
+     y="140.08856"
+     id="text5"
+     transform="scale(1.006314,0.99372561)"><tspan
+       sodipodi:role="line"
+       id="tspan5"
+       x="156.88899"
+       y="140.08856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#3f186f;fill-opacity:1;stroke:#3f186f;stroke-width:0.48784;stroke-opacity:1">Acionistas</tspan></text></svg>
