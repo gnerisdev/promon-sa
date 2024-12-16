@@ -128,6 +128,6 @@ function changeLanguage(language) {
   } 
 
   if (language === 'en') {
-    location.href = "/en"
+    location.href = "/en.html"
   } 
 }
