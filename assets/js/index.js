@@ -119,7 +119,6 @@ function verifyLanguage() {
   let language = "pt";
   const currentPath = window.location.pathname;
   if (currentPath.replaceAll("/", "") === "en") language = "en";
-  console.log(currentPath.replace("/", "") === "en", currentPath.replace("/", ""))
   return language;
 }
 
