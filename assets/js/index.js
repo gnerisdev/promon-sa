@@ -115,19 +115,21 @@ document.getElementById('svg-main').addEventListener('load', function () {
 
 const modalsText = verifyLanguage() == "en" ? modalsTextEn : modalsTextPt;
 
-function verifyLanguage() {
+function verifyLanguage() {  
   let language = "pt";
   const currentPath = window.location.pathname;
-  if (currentPath.replaceAll("/", "") === "en") language = "en";
+  if (currentPath.endsWith("/en.html")) language = "en";
   return language;
 }
 
 function changeLanguage(language) {
-  if (language === 'pt') {
-    location.href = "/"
-  } 
+  const currentPath = window.location.pathname;
 
-  if (language === 'en') {
-    location.href = "/en.html"
-  } 
+  if (language === "pt") {
+    location.href = currentPath.replace("/en.html", "/");
+  } else if (language === "en") {
+    if (!currentPath.endsWith("/en.html")) {
+      location.href = currentPath.replace(/\/$/, "") + "/en.html";
+    }
+  }
 }
