@@ -28,10 +28,10 @@
             </li>
               <div class="language-select">
                 <img src="../assets/images/globe-icon.svg" alt="Icone Globo" class="globe-icon">
-                <span>PT</span>
+                <span>EN</span>
                 <select onchange="changeLanguage(this.value)">
-                  <option value="pt">PT</option>
                   <option value="en">EN</option>
+                  <option value="pt">PT</option>
                 </select>
                 <img src="../assets/images/icon-7.png" alt="Seta para baixo" class="arrow-icon">
               </div>
@@ -39,7 +39,7 @@
           </nav>
         </div>
 
-        <div class="header_floot" data-translate="annual_report">
+        <div class="annual_report annual_report--mobile" data-translate="annual_report">
           <p>ANNUAL <br> REPORT <br> FY 2024</p>
         </div>
       </div>
@@ -47,6 +47,10 @@
 
     <section class="section-promon container">
       <div class="section-promon__history">
+        <div class="annual_report" data-translate="annual_report">
+          <p>ANNUAL <br> REPORT <br> FY 2024</p>
+        </div>
+
         <div class="description">
           <h3>Promon S.A.</h3>
           <p data-translate="promon_description">
@@ -182,7 +186,7 @@
                     1,853 <br> <span data-translate="professionals_label">Latam professionals</span>
                   </p>
                 </li>
-                <li>
+                <li style="margin-top: -14px;">
                   <div></div>
                   <p data-translate="professionals">
                     1,169 <br> <span data-translate="professionals_label">Brazil professionals</span>
@@ -411,7 +415,6 @@
     </div>
   </main>
 
-  <script src="../assets/js/modal.js"></script>
-  <script src="../assets/js/translate.js"></script>
+  <script src="../assets/js/index.js"></script>
 </body>
 </html>

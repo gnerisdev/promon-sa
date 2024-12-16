@@ -12,6 +12,14 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .header .container {
+    height: 100%;
+    display: grid;
+    align-items: end;
+  }
+}
+
 .header__top .logo {
   height: 40px;
 }
@@ -61,19 +69,42 @@
   color: var(--color-primary);
 }
 
-.header_floot {
+.annual_report {
   background: var(--color-primary);
   width: fit-content;
+  display: flex;
   color: var(--color-white);
   font-size: var(--font-size-hero);
-  padding: 5.6rem 5.6rem 2.4rem 3.2rem;
+  max-height: 40vh;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
   position: absolute;
-  bottom: 0;
-  right: 18%;
   font-family: 'UniviaPro';
   font-weight: 400;
   line-height: 50.49px;
+  bottom: 100%;
+  left: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 60px 24px 32px;
+  min-height: 260px;
+}
+@media (max-width: 768px) {
+  .annual_report {
+    display: none;
+  }
+}
+
+.annual_report--mobile {
+  position: static;
+  margin-left: auto;
+  min-height: auto;
+  display: none;
+}
+@media (max-width: 768px) {
+  .annual_report--mobile {
+    display: flex;
+  }
 }
 
 .header__top {
@@ -217,7 +248,6 @@
   clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
   font-family: Univia Pro;
   font-size: var(--font-size-md);
-  font-style: italic;
   font-weight: 400;
   text-align: left;
 }

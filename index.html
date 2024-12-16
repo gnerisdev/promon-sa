@@ -31,7 +31,7 @@
           </nav>
         </div>
 
-        <div class="header_floot" data-translate="annual_report">
+        <div class="annual_report annual_report--mobile" data-translate="annual_report">
           <p>Relatório <br> Anual <br> 2024s</p>
         </div>
       </div>
@@ -39,6 +39,10 @@
 
     <section class="section-promon container">
       <div class="section-promon__history">
+        <div class="annual_report annual_report" data-translate="annual_report">
+          <p>Relatório <br> Anual <br> 2024s</p>
+        </div>
+        
         <div class="description">
           <h3>Promon S.A.</h3>
           <p data-translate="promon_description">Fundada em 1960, a Promon S.A. é uma <span class="text-italic">holding</span> empresarial com um portfólio de companhias atuantes nos mercados de engenharia, de Tecnologia da Informação e Comunicação (TIC) e de eficiência e transformação digital. Com um perfil único, tem como seus acionistas os profissionais e ex-profissionais da Organização.</p>
@@ -48,10 +52,10 @@
 
       <div class="section-promon__formed">
         <div class="wrapper-title">
-          <p data-translate="holding_formed">A <em>holding</em> Promon S.A. é formada por:</p>
+          <p data-translate="holding_formed">A <i style="font-style: italic;">holding</i> Promon S.A. é formada por:</p>
         </div>
         <div class="wrapper-svg">
-          <object id="svg-main" type="image/svg+xml" data="./assets/images/organograma-2.svg" style="width: 100%;"></object>
+          <object id="svg-main" type="image/svg+xml" data="./assets/images/organograma.svg" style="width: 100%;"></object>
         </div>
       </div>
     </section>
@@ -153,13 +157,20 @@
                 </li>
                 <li>
                   <div class="wrapper-icon">
-                    <img src="./assets/images/icon-5.svg" alt="">
+                    <img src="../assets/images/icon-5.svg" alt="">
                   </div>
-                  <p data-translate="professionals">2.980 <br> <span data-translate="professionals_label">profissionais</span></p>
+                  <p data-translate="professionals">
+                    1,853 <br> <span data-translate="professionals_label">profissionais Latam</span>
+                  </p>
                 </li>
-    
+                <li style="margin-top: -14px;">
+                  <div></div>
+                  <p data-translate="professionals">
+                    1,169 <br> <span data-translate="professionals_label">profissionais Brasil</span>
+                  </p>
+                </li>
                 <li style="display: flex;">
-                  <p>
+                  <p style="text-align: centerx;">
                     <span class="text-italic" data-translate="note_logicalis">*O ano fiscal da Logicalis considera o período entre 1º de março de 2023 e 29 de fevereiro de 2024.</span>
                   </p>
                 </li>
@@ -333,7 +344,6 @@
     </div>
   </main>
 
-  <script src="./assets/js/modal.js"></script>
-  <script src="./assets/js/translate.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
