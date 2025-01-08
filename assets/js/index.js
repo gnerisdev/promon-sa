@@ -128,8 +128,6 @@ function changeLanguage(language) {
   if (language === "pt") {
     location.href = currentPath.replace("/en.html", "/");
   } else if (language === "en") {
-    if (!currentPath.endsWith("/en.html")) {
-      location.href = currentPath.replace(/\/$/, "") + "/en.html";
-    }
+    if (!currentPath.endsWith("/en.html")) location.href = "/en.html";
   }
 }

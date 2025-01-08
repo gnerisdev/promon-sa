@@ -398,7 +398,7 @@
 @media (max-width: 768px) {
   .section-foundation__plan {
     grid-template-columns: 1fr;
-    background: var(--color-dark-blue);
+    background: linear-gradient(to top, var(--color-dark-blue) 352px, transparent 352px);
   }
 }
 
@@ -413,7 +413,7 @@
 .section-foundation__plan .background-blue {
   position: absolute;
   background: var(--color-dark-blue);
-  height: 197px;
+  height: 180px;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -799,4 +799,8 @@ span {
 .footer__text-2 span {
   color: var(--color-primary);
   text-transform: uppercase;
+}
+
+option {
+  cursor: pointer;
 }
