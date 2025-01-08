@@ -123,10 +123,13 @@ function verifyLanguage() {
 }
 
 function changeLanguage(language) {
+  const basePath = "/promon-sa"; // Subdiretório base do site no GitHub Pages
   const currentPath = window.location.pathname;
 
   if (language === "pt") {
-    location.href = currentPath.replace("/en.html", "/");
+    if (currentPath.endsWith("/en.html")) {
+      location.href = currentPath.replace("/en.html", "/");
+    }
   } else if (language === "en") {
     if (!currentPath.endsWith("/en.html")) {
       location.href = currentPath.replace(/\/$/, "") + "/en.html";
